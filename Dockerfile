@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.13.2-gpu-py3
+FROM python:3.6-alpine
 
 COPY requirements.txt /app/
 RUN pip install -r /app/requirements.txt && rm -rf /root/.cache
